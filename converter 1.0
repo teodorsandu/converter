@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Brian's nifty calculator page</title>                                      
 
-<style>
+<style>                                  
 
 	body {
 		background-image: url("http://www.mechanical.in/wp-content/uploads/2013/05/Copy-of-Fotolia_45000330_Subscription_Monthly_XL.jpg");
@@ -427,7 +427,7 @@
 		
 }
 
-	function sqTank() {
+	function sqTank() {					  //functions to calculate capacities of tanks
 		var result = 0;
 		var length = document.getElementById("tLength").value;
 		var width = document.getElementById("tWidth").value;
@@ -445,7 +445,7 @@
 	
 	
 }
-	function calculateTemp(input) {
+	function calculateTemp(input) {						//temp converter even does Kelvin if you happen to plan a trip to mars
 		if (input == "C") {
 			F = document.getElementById("c").value * 9 /5 + 32;
 			K = Number(document.getElementById("c").value) +  273.15;
@@ -468,7 +468,7 @@
 	
 	}
 	
-	function calculateCFM() {
+	function calculateCFM() {			//First function ever!!
 		var result = 0;
 		var pipe =  document.getElementById("pipeD").value;
 		var veloA =  document.getElementById("velocity").value;
