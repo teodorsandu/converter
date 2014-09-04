@@ -1,0 +1,165 @@
+ body {
+		background-image: url(steel2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: gray;
+	}
+
+	button {
+		background-color: orange;
+		border: 3px ridge red;
+		border-radius: 10px;
+	}
+	
+	button:hover {
+		background-color: red;
+	}
+
+	div {
+		background-image: url(steel.jpg);
+		background-color: darkgray;
+		border:5px ridge orange;
+		border-radius: 10px;
+		color: yellow;
+		display: inline-block;
+		margin: auto 1px auto 1px;
+		-webkit-transition: border 1s ease 1s;
+	}
+	
+	
+	input:hover {
+		background-color: yellow;
+	}
+
+	
+	
+	h2, p {
+		color: yellow;
+		text-align: center;
+		text-decoration: underline;
+	}
+	
+	ul {
+		list-style: none;
+	}
+	
+	/***************************************************************************************************
+	HEADER
+	***************************************************************************************************/
+	
+	h1 {
+		background-image: url(steel2.jpg);
+		background-color: gray;
+		border: 5px ridge orange;
+		border-radius: 10px;
+		color: red;
+		font-family: Century Gothic, sans-serif;
+		font-size: 50px;
+		margin-top: 20px;
+		margin-left: 220px;
+		margin-right: 220px;
+		text-align: center;
+    }
+	
+	header {
+		height: 20%;
+		margin-bottom: 3%;
+		width: 100%;
+	}
+	
+	#resetButton {
+		width: 30%;
+		margin-left: 35%;
+	}
+	
+	/****************************************************************************************************
+	CFM CALC
+	****************************************************************************************************/
+	
+	#CFMcalc {
+		float:left;
+		margin: 1%;
+	}
+	
+	#CFMcalc input {
+		width: 70px;
+		text-align: center;
+		margin-left: 32%;
+	}
+	
+	/***************************************************************************************************
+	AREA CALC
+	***************************************************************************************************/
+	
+	#areaCalc {
+		float: left;
+		margin: 1%;
+		padding: 0 1%;
+	}
+	
+	#areaCalc input {
+		margin-left: 5%;
+		width: 50px;
+		text-align: center;
+	}
+	
+	#areaCalc textarea {
+		color: red;
+		font-size: 1.2em;
+		margin-left: -5%;
+		text-align:center;
+		width: 130px;
+	}
+	
+	
+	
+	/****************************************************************************************************
+	METRIC STANDARD
+	****************************************************************************************************/
+	
+	#metricStandard{
+		float: left;
+		margin: 1%;
+		
+	}
+	
+	#metricStandard h2 , p{
+	 text-align: center;
+	}
+	
+	#metricStandard input {
+		width: 70px;
+	}
+	
+	/****************************************************************************************************
+	WEIGHT CALC
+	*****************************************************************************************************/
+	
+	#weighCalc {
+		float: left;
+		margin: 1%;
+	}
+	
+	#weighCalc input{
+		width: 70px;
+	}
+
+	#tempCalc {
+	}
+	
+	/******************************************************************************************************
+	LIQUID CALC
+	******************************************************************************************************/
+	
+	#liquidCalc {
+		margin: 1%;
+	}
+	
+	#liquidCalc input {
+		width: 70px;
+		margin-left: 20%;
+	}
+	
+	
+	
+	
