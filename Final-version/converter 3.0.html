@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/conv_styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<title>Brian's nifty calculator page</title>                                      
+
+</head>
+
+<body>
+<section>
+	<header>
+		<h1><em>Brian's kick ass calculator page</em></h1>
+		
+		<button id="resetButton" onclick="resetAll()"> MASTER RESET</button><br>
+	</header>
+	
+	<div id="CFMcalc">
+		<h2> CFM calculator</h2>
+			<p>Enter the diameter in inches</p>
+			<input type="number" id="pipeD" min='0' max='20'></input> 
+			<p>Air Velocity in feet per minute</p>
+			<input type="number" id="velocity" step="10" min="0"></input><br>
+			<p><button id="calCFM" type="button" onclick="calculateCFM()">Click to calculate</button></p>
+		<h2>Your CFM is:</h2>
+			<textarea id="resultCalc"></textarea>
+	</div>
+	
+	<div id="areaCalc">
+	 	<h2>Capacities of Tanks</h2>
+	    <p>Circular Tanks(values in inches):</p>
+			<ul>
+				<li><input id="rValue"> Radius</input></li>
+				<li><input id="lValue"> Length</input></li>
+				<li><textarea id="cResult"></textarea></li>
+				<li><button type="button" onclick="rTank()">Click to Calculate</button></li>
+			</ul>
+	    <p>Square Tanks(values in inches):</p>
+			<ul>
+				<li><input id="tHeight"> Height</input></li>
+				<li><input id="tLength"> Length</input></li>
+				<li><input id="tWidth">  Width</input></li>
+				<li><textarea id="sqResult"></textarea></li>
+				<li><button type="button" onclick="sqTank()"> Click to Calculate</button>
+			</ul>
+	</div>
+	   
+	<div id="weighCalc">
+		<h2>weight converter</h2>
+		<p>Enter any weight to calculate</p>
+			<ul>
+				<li><input id="ozs" onkeyup="weightCalc('OZ')"></input> Ounces</li>
+				<li><input id="lbs" onkeyup="weightCalc('LB')"></input> Pounds</li>
+				<li><input id="mgs" onkeyup="weightCalc('MG')"></input> Milligrams</li>
+				<li><input id="gms" onkeyup="weightCalc('GM')"></input> Grams</li>
+				<li><input id="kgs" onkeyup="weightCalc('KG')"></input> Kilograms</li>
+			</ul>
+		<h2>temp converter</h2>
+		<p>Enter any numeric value</p>
+			<ul>
+				<li><input id="c" onkeyup="calculateTemp('C')"></input> Celsius degrees</li>
+				<li><input id="f" onkeyup="calculateTemp('F')"></input>   Fahrenheit degrees</li>
+				<li><input id="k" onkeyup="calculateTemp('K')"></input> Kelvin degrees</li>
+			</ul>
+	</div>
+	   
+	
+	<div id="liquidCalc">
+		<h2>Liquid conversions</h2>
+		<p>Enter any liquid volume</p>
+			<input id="oz" onkeyup="liquidCalc('OU')"> Ounces</input><br>
+			<input id="cup" onkeyup="liquidCalc('CP')"> Cups</input><br>
+			<input id="pint" onkeyup="liquidCalc('PT')"> Pints</input><br>
+			<input id="qts" onkeyup="liquidCalc('QT')"> Quarts</input><br>
+			<input id="gals" onkeyup="liquidCalc('GL')"> Gallons</input><br>
+			<input id="mltr" onkeyup="liquidCalc('ML')"> Millilitres</input><br>
+			<input id="ltr" onkeyup="liquidCalc('L')"> Liter</input><br><br><br>
+			
+	</div>
+	
+	<div id="metricStandard">
+		<h2>Metric/Standard</h2>
+		<p>enter any value</p>
+			<ul>
+				<li><input id="inches" onkeyup="metric_standard('IN')"> Inches</input></li>
+				<li><input id="feet" onkeyup="metric_standard('FT')"> Feet</input></li>
+				<li><input id="yards" onkeyup="metric_standard('YD')"> Yards</input></li>
+				<li><input id="miles" onkeyup="metric_standard('MI')"> Miles</input></li>
+				<li><input id="cent" onkeyup="metric_standard('CT')"> Centimeters</input></li>
+				<li><input id="meter" onkeyup="metric_standard('MT')"> Meters</input></li>
+				<li><input id="kilos" onkeyup="metric_standard('KM')"> Kilometers</input></li>
+			</ul>
+	</div>
+	   
+	 
+		
+	 
+</section>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="js/conv_scripts.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
